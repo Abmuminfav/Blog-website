@@ -17,11 +17,11 @@ function Blog(){
         fetchPosts();
     })
     return(
-        <div className="min-h-screen bg-black p-4 text-white">
+        <div className="bg-white p-4 text-black">
             {posts.map(post =>(
-                <div key={post.id} className="bg-gray-500">
-                    <h2>{post.title}</h2>
-                    <p>{post.content}</p>
+                <div key={post.id} className="bg-gray-300 w-[300px] shadow-lg text-center mx-auto rounded-lg p-4">
+                    <h2 className="font-bold p-3">{post.title}</h2>
+                    <p className="text-sm p-3">{post.content}</p>
                     <p>by {post.aurthor}</p>
                 </div>
             ))
