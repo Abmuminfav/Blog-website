@@ -22,7 +22,7 @@ function Navbar(){
         <div className={`md:hidden absolute top-full left-0 w-full bg-black/90 backdrop-blur-lg shadow-md transition-all duration-300 overflow-hidden ${open ? "max-h-96" : "max-h-0"}`}>
             <ul className="flex flex-col gap-6 text-white p-2">
                 <li onClick={() => setOpen(false)}><Link to="/">Home</Link></li>
-                <li onClick={() => setOpen(false)}><Link to="/create">Create Post</Link></li>
+                <li onClick={() => setOpen(false)}><Link to="/Create">Create Post</Link></li>
                 <li onClick={() => setOpen(false)}><Link to="/About">About</Link></li>
                 <li onClick={() => setOpen(false)}><Link to="/Donate">
                 <button className="border-[#FB015A] p-2 rounded-sm bg-[#FB015A]">Donate Now</button>
