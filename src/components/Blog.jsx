@@ -17,7 +17,7 @@ function Blog(){
         fetchPosts();
     })
     return(
-        <div className="bg-white p-4 text-black">
+        <div className="bg-white p-4 text-black md:flex justify-center gap-4">
             {posts.map(post =>(
                 <div key={post.id} className="border w-[300px] shadow-lg text-center flex flex-col rounded-lg p-4">
                     <h2 className="font-bold p-3">{post.title}</h2>
