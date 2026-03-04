@@ -1,7 +1,6 @@
 import back from "../assets/back.jpg"
-import Blog from "./Blog";
 import Blogcont from "./Blongcont";
-import Navbar from "./Navbar";
+
 
 function Home(){
     return(

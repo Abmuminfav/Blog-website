@@ -19,10 +19,10 @@ function Blog(){
     return(
         <div className="bg-white p-4 text-black">
             {posts.map(post =>(
-                <div key={post.id} className="border w-[300px] shadow-lg text-center mx-auto flex flex-col rounded-lg p-4">
+                <div key={post.id} className="border w-[300px] shadow-lg text-center flex flex-col rounded-lg p-4">
                     <h2 className="font-bold p-3">{post.title}</h2>
                     <div>
-                    <p className="text-sm p-3 break-words line-clamp-4">{post.content}</p>
+                    <p className="text-sm p-3 break-words">{post.content}</p>
                     </div>
                     <p className="mt-auto text-sm italic">by {post.author}</p>
                 </div>
